@@ -1,6 +1,6 @@
 # My Portfolio
 
-This is a portfolio website showcasing the projects, skills, and experiences of [Your Name]. 
+This is a portfolio website showcasing the projects, skills, and experiences of Manav Behl. 
 
 ## Overview
 
