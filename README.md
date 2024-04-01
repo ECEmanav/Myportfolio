@@ -30,10 +30,7 @@ To view the website, simply navigate to [https://ecemanav.github.io/Myportfolio/
 
 Contributions to the improvement of this portfolio website are welcome. Please feel free to open an issue or submit a pull request with your suggestions or enhancements.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Special thanks to [mention any contributors, resources, or inspirations here].
+- Special thanks to CodewithHarry for the inspiration and lesson.
