@@ -1,19 +1,18 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
-
 /* Fallback font for Mukta */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Mukta', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 
 /* Color scheme consistency */
 :root {
@@ -27,7 +26,6 @@
     color: white;
     transition: transform 0.3s ease-in;
 }
-
 
 .sidebar nav {
     padding: 45px;
@@ -58,7 +56,6 @@
 .container {
     display: grid;
     font-family: 'Poppins', sans-serif;
-    
 }
 
 .cont {
@@ -74,7 +71,6 @@
     flex-direction: column; /* Make content stack vertically */
     justify-content: space-aroundx; /* Center content vertically */
     text-align: left;
-    
     padding: 20px; /* Add padding for better readability */
     border-radius: 10px; /* Add border-radius for a modern look */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for depth */
@@ -102,6 +98,7 @@
 .moreabout:hover {
     opacity: 1;
 }
+
 .button button {
     margin-top: 20px;
     background-color: var(--primary-color);
@@ -117,7 +114,7 @@
     background-color: white;
     color: black;
 }
-/* cointainer */
+
 .infocontainer,
 .piccontainer {
     flex: 1; /* Adjust the flex value as needed for width distribution */
@@ -128,16 +125,13 @@
     display: flex;
     justify-content: center; /* Center content horizontally within piccontainer */
     align-items: center; /* Center content vertically within piccontainer */
-    /* background-color: aqua; */
     height: fit-content;
     width: fit-content;
     border-radius: 50%;
     float: inline-end;
     margin-bottom: 100%;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
-
-
 
 /* Flip circle styles */
 .flip-circle,
@@ -151,7 +145,7 @@
     aspect-ratio: 1 / 1; /* Ensure a perfect circle */
 }
 
-.devpic { 
+.devpic {
     margin-right: 20px; /* Adjust the margin as needed */
 }
 
@@ -198,7 +192,6 @@
     font-weight: bold;
 }
 
-
 .devpic img {
     width: 100%;
     height: 100%;
@@ -224,66 +217,46 @@
     margin-top: 5px;
 }
 
-/* project */
-
 /* Project Container Styles */
-
-
-/* Project Group Styles */
-.project-group {
+.project-container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Add margin between project groups as needed */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 /* Project Styles */
-.project1,
-.project2,
-.project3,
-.project4 {
-    width: calc(50% - 10px); /* Adjust width and margin as needed */
-    margin-top: 10px;
-    padding: 20px;
+.project {
+    flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Project 2 Image Styles */
-.project2 .img img {
-    width: 40vw;
-    height: 40vh;
-    margin: 50px auto;
-    margin-left: 20px;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s; /* Add a smooth transition effect */
+/* Image Styles */
+.project .img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
 }
 
-/* Project 2 Image Hover Styles */
-.project2 .img:hover img {
-    transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+.project .img:hover img {
+    transform: scale(1.1);
 }
 
-/* Project 2 Description Styles */
-.img .Des {
-    display: flex;
+/* Description Styles */
+.project .Des {
+    margin-top: 10px;
 }
 
-/* Heading Font Styles */
 .project-container h2 {
-    font-family: 'Cursive Font', cursive; /* Add the desired cursive font */
+    font-family: 'Cursive Font', cursive;
 }
 
-
-
-
-
-
-
+/* Responsive Styles */
 @media (max-width: 1615px) {
     .devpic {
         display: none;
     }
-
 }
