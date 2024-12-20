@@ -227,34 +227,67 @@
 
 /* Project Styles */
 .project {
-    flex: 1 1 calc(50% - 20px);
+    flex: 1 1 calc(45% - 20px); /* Adjust width for better layout */
+    max-width: 400px; /* Prevent overly large cards */
     box-sizing: border-box;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Add background for contrast */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    height: 450px; /* Uniform height for all cards */
+}
+
+/* Project Hover Animation */
+.project:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Image Styles */
+.project .img {
+    height: 200px; /* Set a fixed height for images */
+    overflow: hidden; /* Crop overflowing parts */
+    border-radius: 10px; /* Rounded corners */
+}
+
 .project .img img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ensure images fill the container without distortion */
     transition: transform 0.3s;
 }
 
-.project .img:hover img {
-    transform: scale(1.1);
+.project:hover .img img {
+    transform: scale(1.1); /* Zoom effect on hover */
 }
 
 /* Description Styles */
 .project .Des {
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666; /* Softer text color for descriptions */
 }
 
+/* Heading Styles */
 .project-container h2 {
     font-family: 'Cursive Font', cursive;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Center align project titles */
 }
 
 /* Responsive Styles */
+@media (max-width: 768px) {
+    .project {
+        flex: 1 1 100%; /* Full-width cards on small screens */
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
 @media (max-width: 1615px) {
     .devpic {
         display: none;
